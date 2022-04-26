@@ -1,4 +1,4 @@
-# whistle.vase 
+# whistle.fake 
 > [请将 Whistle 升级到最新版本](https://wproxy.org/whistle/update.html)
 
 vase 内置[default](#default)、[doT](#dot)、[dust](#dust)、[ejs](#ejs)、[handlebars](#handlebars)、[mock](#mock)、[mustache](#mustache)、[nunjucks](#nunjucks)、[vm](#vm)及用于解析自定义脚本的[script](#script)等渲染引擎，通过该[whistle](https://github.com/avwo/whistle#whistle)插件，可以通过模板结合相应的引擎mock开发过程中需要的json、html、图片等数据，也可以通过[script](#script)来自定义脚本更加灵活的获取模板及数据，控制输出等（如果只是静态数据不需要借助模板引擎批量生成，直接利用[whistle](https://github.com/avwo/whistle)的 `file` 或 `xfile` 即可实现）。
@@ -7,10 +7,10 @@ vase 内置[default](#default)、[doT](#dot)、[dust](#dust)、[ejs](#ejs)、[ha
 ### 安装whistle
 请参考：[https://github.com/avwo/whistle#whistle](https://github.com/avwo/whistle#whistle)
 
-### 安装插件whistle.vase
+### 安装插件whistle.fake
 安装启动[whistle](https://github.com/avwo/whistle#whistle)后，直接通过npm来安装whistle插件：
 
-	$ w2 install whistle.vase
+	$ w2 install whistle.fake
 	
 **Note: 安装过程中的一些警告可以先忽略，如果要用到https、websocket需要[启用HTTPS](https://wproxy.org/whistle/webui/https.html)**
 	
@@ -18,14 +18,14 @@ vase 内置[default](#default)、[doT](#dot)、[dust](#dust)、[ejs](#ejs)、[ha
 
 # 用法
 ### 配置界面
-按上图操作打开vase的配置界面，也可以直接访问: [http://local.whistlejs.com/whistle.vase/](http://local.whistlejs.com/whistle.vase/)
+按上图操作打开vase的配置界面，也可以直接访问: [http://local.whistlejs.com/whistle.fake/](http://local.whistlejs.com/whistle.fake/)
 
-![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.vase/master/src/img/usage.png)
+![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.fake/master/src/img/usage.png)
 
 ### mock数据及获取数据
 按上图，创建一个名称为`test-dust`、引擎名称为`dust`的的模板，内容如下：
 
-![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.vase/master/src/img/create.png)
+![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.fake/master/src/img/create.png)
 
 也支持通过本地文件加载模板 `pattern vase://tpl:AbsoluteLocalFilePath`，如：`www.test.com/path/to vase://mock:D:\test\demo.json` 或 `www.test.com/path/to vase://mock:/Users/av/test/demo.json`，方便把 mock 数据集成到项目文件里面，并通过 [w2 add](https://wproxy.org/whistle/cli.html) 自动配置项目的 mock 环境
 
@@ -33,7 +33,7 @@ vase 内置[default](#default)、[doT](#dot)、[dust](#dust)、[ejs](#ejs)、[ha
 	
 	vase://test-dust /sina/ www.ifeng.com http://www.aliexpress.com/category/
 
-![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.vase/master/src/img/whistle.png)
+![Usage](https://raw.githubusercontent.com/whistle-plugins/whistle.fake/master/src/img/whistle.png)
 
 分别访问如下url：
 
@@ -303,7 +303,7 @@ engineType：可选，渲染引擎名称，包含 [default](#default)、[doT](#d
 
 ### 模拟bigpipe
 
-	out(join(render('test-doT', json(get('https://raw.githubusercontent.com/whistle-plugins/whistle.vase/master/package.json'))), '<br>'));
+	out(join(render('test-doT', json(get('https://raw.githubusercontent.com/whistle-plugins/whistle.fake/master/package.json'))), '<br>'));
 	out(join(render('test-default'), '<br>'), 1000);
 	out(join(render('test-doT', {name: 'doT'}), '<br>'), 1000);
 	out(join(render('test-dust', {name: 'dust'}), '<br>'), 1000);

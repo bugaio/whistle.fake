@@ -356,7 +356,7 @@ var Index = React.createClass({
 		var activeItem = this.state.modal.getActive();
 		var engineName;
 		if (activeItem) {
-			engineName = <span className="w-engine-name">Engine(<a href={'https://github.com/whistle-plugins/whistle.vase#' + activeItem.type.toLowerCase()} target="_blank">{activeItem.type}</a>)</span>;
+			engineName = <span className="w-engine-name">Engine(<a href={'https://github.com/bugaio/whistle.fake#' + activeItem.type.toLowerCase()} target="_blank">{activeItem.type}</a>)</span>;
 		}
 
 		return (<div className="container orient-vertical-box">
@@ -373,7 +373,7 @@ var Index = React.createClass({
 						<a className="w-save-menu" href="javascript:;" onClick={this.save}><span className="glyphicon glyphicon-save-file" draggable="false"></span>Save</a>
 						<a className="w-save-menu" href="javascript:;" onClick={this.format}><span className="glyphicon glyphicon-ok-sign" draggable="false"></span>Format</a>
 						<a className="w-settings-menu" href="javascript:;" onClick={this.showTplSettingsDialog}><span className="glyphicon glyphicon-cog" draggable="false"></span>Settings</a>
-						<a className="w-help-menu" href="https://github.com/whistle-plugins/whistle.vase#whistlevase" target="_blank"><span className="glyphicon glyphicon-question-sign"></span>Help</a>
+						<a className="w-help-menu" href="https://github.com/bugaio/whistle.fake#whistlevase" target="_blank"><span className="glyphicon glyphicon-question-sign"></span>Help</a>
 						{engineName}
 					</div>
 					<List onDrop={this.onDrop}
@@ -391,7 +391,7 @@ var Index = React.createClass({
 					      	 			return (
 					      	 				<label key={name} data-name={name}><input type="radio" data-type={name} name="tplName" />{name}</label>
 					      	 			);
-					      	 		})}<a title="Help" className="glyphicon glyphicon-question-sign w-vase-help" href="https://github.com/whistle-plugins/whistle.vase#whistlevase" target="_blank"></a>
+					      	 		})}<a title="Help" className="glyphicon glyphicon-question-sign w-vase-help" href="https://github.com/bugaio/whistle.fake#whistlevase" target="_blank"></a>
 						      	 </li>
 						      </ul>
 						      <div className="modal-footer">
@@ -414,7 +414,7 @@ var Index = React.createClass({
 					      	 			return (
 					      	 				<label key={name} data-name={name}><input type="radio" data-type={name} name="tplName" />{name}</label>
 					      	 			);
-					      	 		})}<a title="Help" className="glyphicon glyphicon-question-sign w-vase-help" href="https://github.com/whistle-plugins/whistle.vase#whistlevase" target="_blank"></a>
+					      	 		})}<a title="Help" className="glyphicon glyphicon-question-sign w-vase-help" href="https://github.com/bugaio/whistle.fake#whistlevase" target="_blank"></a>
 						      	 </li>
 						      </ul>
 						      <div className="modal-footer">

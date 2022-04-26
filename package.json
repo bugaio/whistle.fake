@@ -1,7 +1,7 @@
 {
-  "name": "whistle.vase",
-  "version": "2.2.2",
-  "description": "用于mock数据的whistle插件",
+  "name": "whistle.fake",
+  "version": "2.2.4",
+  "description": "用于mock数据的whistle插件 改",
   "main": "lib/index.js",
   "keywords": [
     "mockjs",
@@ -9,10 +9,10 @@
     "template",
     "stub"
   ],
-  "homepage": "https://github.com/whistle-plugins/whistle.vase",
+  "homepage": "https://github.com/bugaio/whistle.fake",
   "repository": {
     "type": "git",
-    "url": "https://github.com/whistle-plugins/whistle.vase.git"
+    "url": "https://github.com/bugaio/whistle.fake.git"
   },
   "author": "avenwu <avenwu@vip.qq.com>",
   "license": "MIT",

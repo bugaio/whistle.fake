@@ -402,7 +402,7 @@
 			var activeItem = this.state.modal.getActive();
 			var engineName;
 			if (activeItem) {
-				engineName = React.createElement("span", {className: "w-engine-name"}, "Engine(", React.createElement("a", {href: 'https://github.com/whistle-plugins/whistle.vase#' + activeItem.type.toLowerCase(), target: "_blank"}, activeItem.type), ")");
+				engineName = React.createElement("span", {className: "w-engine-name"}, "Engine(", React.createElement("a", {href: 'https://github.com/bugaio/whistle.fake#' + activeItem.type.toLowerCase(), target: "_blank"}, activeItem.type), ")");
 			}
 
 			return (React.createElement("div", {className: "container orient-vertical-box"}, 
@@ -419,7 +419,7 @@
 							React.createElement("a", {className: "w-save-menu", href: "javascript:;", onClick: this.save}, React.createElement("span", {className: "glyphicon glyphicon-save-file", draggable: "false"}), "Save"), 
 							React.createElement("a", {className: "w-save-menu", href: "javascript:;", onClick: this.format}, React.createElement("span", {className: "glyphicon glyphicon-ok-sign", draggable: "false"}), "Format"), 
 							React.createElement("a", {className: "w-settings-menu", href: "javascript:;", onClick: this.showTplSettingsDialog}, React.createElement("span", {className: "glyphicon glyphicon-cog", draggable: "false"}), "Settings"), 
-							React.createElement("a", {className: "w-help-menu", href: "https://github.com/whistle-plugins/whistle.vase#whistlevase", target: "_blank"}, React.createElement("span", {className: "glyphicon glyphicon-question-sign"}), "Help"), 
+							React.createElement("a", {className: "w-help-menu", href: "https://github.com/bugaio/whistle.fake#whistlevase", target: "_blank"}, React.createElement("span", {className: "glyphicon glyphicon-question-sign"}), "Help"), 
 							engineName
 						), 
 						React.createElement(List, {onDrop: this.onDrop, 
@@ -437,7 +437,7 @@
 						      	 			return (
 						      	 				React.createElement("label", {key: name, "data-name": name}, React.createElement("input", {type: "radio", "data-type": name, name: "tplName"}), name)
 						      	 			);
-						      	 		}), React.createElement("a", {title: "Help", className: "glyphicon glyphicon-question-sign w-vase-help", href: "https://github.com/whistle-plugins/whistle.vase#whistlevase", target: "_blank"})
+						      	 		}), React.createElement("a", {title: "Help", className: "glyphicon glyphicon-question-sign w-vase-help", href: "https://github.com/bugaio/whistle.fake#whistlevase", target: "_blank"})
 							      	 )
 							      ), 
 							      React.createElement("div", {className: "modal-footer"}, 
@@ -460,7 +460,7 @@
 						      	 			return (
 						      	 				React.createElement("label", {key: name, "data-name": name}, React.createElement("input", {type: "radio", "data-type": name, name: "tplName"}), name)
 						      	 			);
-						      	 		}), React.createElement("a", {title: "Help", className: "glyphicon glyphicon-question-sign w-vase-help", href: "https://github.com/whistle-plugins/whistle.vase#whistlevase", target: "_blank"})
+						      	 		}), React.createElement("a", {title: "Help", className: "glyphicon glyphicon-question-sign w-vase-help", href: "https://github.com/bugaio/whistle.fake#whistlevase", target: "_blank"})
 							      	 )
 							      ), 
 							      React.createElement("div", {className: "modal-footer"}, 
